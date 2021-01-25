@@ -2070,8 +2070,43 @@ select {
 }
 
 /*====================================================================
-							[ KOSONG ]
+							[ TAMBAHAN ]
 ======================================================================*/
 
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #666666;
+    border: 1px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #999999;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ff000000;
+    border: 1px none #ffffff00;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 
 
