@@ -273,10 +273,15 @@ jQuery(window).on('load', function(){
 	});
 });
 
+
 /*
-	KOSONG
+	LOGO REFRESH
 ================================ */
 
 document.getElementById("logo-link").addEventListener("click", function() {
 	location.reload();
   });
+
+  /*
+	KOSONG
+================================ */
