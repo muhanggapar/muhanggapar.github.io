@@ -219,13 +219,13 @@ h6 {
 hd2 {
 	font-family: 'Montserrat';
     font-weight: 400;
-    color: #9c9c9c;  /* warna text home */
+    color: #ffffff;  /* warna text home */
     margin: 0 0 15px;
 }
 hd3 {
     font-family: 'montserratsemibold';
     font-size: 26px;
-    color: #acacac;
+    color: #ffffff;
 }
 
 /*
@@ -672,7 +672,7 @@ hd3 {
 	background: #2b2b2b none repeat scroll 0 0;
 }
 .bg-color-4 {
-	background: #d3d3d3c4 none repeat scroll 0 0;   /* Color menu right area */
+	background: #00000070 none repeat scroll 0 0;   /* Color menu right area */
 }   
 .bg-color-5 {
 	background: #ff0000c4 none repeat scroll 0 0;   /* Color test */
@@ -818,7 +818,7 @@ i[class^="flaticon-"]:before {
 ============================== */
 ul, ul li {
   list-style: outside none none;
-  margin: 0;
+  margin:0 0 5px 0;
   padding: 0;
 }
 nav {
@@ -932,7 +932,7 @@ select {
     margin: 0 10px;
 }
 .mainmenu li a {
-    color: #888888; /* warna text menu atas */
+    color: #ffffff; /* warna text menu atas */
     display: block;
     line-height: 40px;
     padding: 0 5px;
@@ -940,7 +940,7 @@ select {
 	letter-spacing: 0.40px;
 }
 .mainmenu li a:after {
-    background: #a1a1a1 none repeat scroll 0 0; /* warna garis menu atas */
+    background: #ffffff none repeat scroll 0 0; /* warna garis menu atas */
     content: "";
     height: 2px;
     left: 0;
@@ -954,7 +954,7 @@ select {
 }
 .mainmenu li a:hover,
 .mainmenu li.active a {
-    color: #888888; /* warna text menu atas */
+    color: #ffffff; /* warna text menu atas */
 }
 .mainmenu li a:hover:after,
 .mainmenu li.active a:after {
@@ -981,14 +981,14 @@ select {
     transition: all 0.4s ease 0s;
 }
 .expand-menu-open i {
-    color: #616161;
+    color: #ffffff;
     cursor: pointer;
     font-size: 20px;
     line-height: 40px;
     padding-left: 15px;
 }
 .close-menu {
-    color: #999999;
+    color: #ffffff;
     cursor: pointer;
     font-size: 30px;
     height: 30px;
@@ -1001,7 +1001,7 @@ select {
     width: 30px;
 }
 .close-menu:hover {
-    color: #ffffff;
+    color: #bbbbbb;
 }
 .menu-logo {
     padding: 60px 0;
@@ -1050,9 +1050,9 @@ select {
 .header-top.is-sticky {
     -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
             animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
-    background: #ffffffde; /* Warna Menu Scroll bawah */
+    background: #3131316e; /* Warna Menu Scroll bawah */
     left: 0;
-    padding: 10px 0;
+    padding: 1px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -1084,7 +1084,7 @@ select {
     line-height: 28px;
 }
 .slider-text h5 {
-    color: #919191;
+    color: #ffffff;
 	letter-spacing: 1px;
 }
 .slider-text > p {
