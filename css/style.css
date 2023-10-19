@@ -2033,6 +2033,12 @@ select {
 	margin-left: 33.5px;
 }
 
+.listpoint li{
+	list-style-type: disc;
+	color: #767676;
+	margin-left: 33.5px;
+}
+
 /* link */
 .awards a{ 
 	color: #767676;
