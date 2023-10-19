@@ -276,3 +276,7 @@ jQuery(window).on('load', function(){
 /*
 	KOSONG
 ================================ */
+
+document.getElementById("logo-link").addEventListener("click", function() {
+	location.reload();
+  });
