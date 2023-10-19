@@ -50,15 +50,30 @@
   EXPEND MENU
 ================================== */
 
-	var CloseMu = $('.close-menu');
-	var ExMu = $('.mainmenu-expand');
-	var ExMuOp = $('.expand-menu-open');
-	CloseMu.on('click', function(){
-		$(this).parent(ExMu).removeClass('slide_right');
-	});
-	ExMuOp.on('click', function(){
-		CloseMu.parent(ExMu).addClass('slide_right');
-	});
+var CloseMu = $('.close-menu');
+var ExMu = $('.mainmenu-expand');
+var ExMuOp = $('.expand-menu-open');
+
+CloseMu.on('click', function(){
+  ExMu.removeClass('slide_right');
+});
+
+ExMuOp.on('click', function(event){
+  event.stopPropagation(); // Hindari menutup menu saat tombol "menu" ditekan
+  ExMu.toggleClass('slide_right');
+});
+
+// Tambahkan event click pada elemen dokumen untuk menutup menu saat klik di luar menu
+$(document).on('click', function(event) {
+  if (!ExMu.is(event.target) && ExMu.has(event.target).length === 0) {
+    ExMu.removeClass('slide_right');
+  }
+});
+
+// Menghentikan klik di dalam menu dari menutup menu
+ExMu.on('click', function(event) {
+  event.stopPropagation();
+});
 
 /*
   PROGRESS WITH WAYPOINT ACTIVE

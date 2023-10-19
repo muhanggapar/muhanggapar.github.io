@@ -2,6 +2,7 @@
 ### This is Muhammad Angga Paripurna personal website/portofolio 2019 Ver.
 ### Access it through [muhanggapar.github.io](http://muhanggapar.github.io).
 #### Contact Me at:
+* [Instagram](https://www.instagram.com/muhanggapar)
 * [E-mail](mailto:muhammadanggapar@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/muhammadanggapar/)
 
