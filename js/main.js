@@ -278,13 +278,15 @@ jQuery(window).on('load', function(){
 	LOGO REFRESH
 ================================ */
 
+// Top bar logo
 document.getElementById("logo-link").addEventListener("click", function() {
-	location.reload();
-  });
+  location.reload();
+});
 
+// Sidebar logo
 document.getElementById("menu-logo-link").addEventListener("click", function() {
-	location.reload();
-  });
+  location.reload();
+});
 
   /*
 	KOSONG
