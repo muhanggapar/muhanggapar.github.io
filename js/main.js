@@ -282,6 +282,10 @@ document.getElementById("logo-link").addEventListener("click", function() {
 	location.reload();
   });
 
+document.getElementById("menu-logo-link").addEventListener("click", function() {
+	location.reload();
+  });
+
   /*
 	KOSONG
 ================================ */
