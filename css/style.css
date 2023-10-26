@@ -936,39 +936,49 @@ select {
 /* Main menu
 ---------------------------- */
 
-.mainmenu li {
+.mainmenu {
+    display: none; /* Sembunyikan menu utama secara default */
+  }
+  
+  @media (min-width: 1200px) {
+    .mainmenu {
+      display: block; /* Tampilkan menu utama jika lebar layar lebih besar atau sama dengan 1200px */
+    }
+  }
+  
+  .mainmenu li {
     float: left;
     margin: 0 10px;
-}
-.mainmenu li a {
+  }
+  .mainmenu li a {
     color: #ffffff; /* warna text menu atas */
     display: block;
     line-height: 40px;
     padding: 0 5px;
     position: relative;
-	letter-spacing: 0.40px;
-}
-.mainmenu li a:after {
+    letter-spacing: 0.40px;
+  }
+  .mainmenu li a:after {
     background: #ffffff none repeat scroll 0 0; /* warna garis menu atas */
     content: "";
     height: 2px;
     left: 0;
     margin-top: -1px;
-	-webkit-margin-before: -2px;
     position: absolute;
     top: 100%;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     width: 0;
-}
-.mainmenu li a:hover,
-.mainmenu li.active a {
+  }
+  .mainmenu li a:hover,
+  .mainmenu li.active a {
     color: #ffffff; /* warna text menu atas */
-}
-.mainmenu li a:hover:after,
-.mainmenu li.active a:after {
+  }
+  .mainmenu li a:hover:after,
+  .mainmenu li.active a:after {
     width: 100%;
-}
+  }
+  
 
 /* expand menu
 --------------*/
@@ -2114,3 +2124,45 @@ select {
 /*====================================================================
 							[ TAMBAHAN ]
 ======================================================================*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .popup.active {
+    display: block;
+    transition: opacity 0.3s;
+    opacity: 1;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center; /* Mengatur teks di tengah */
+  }
+  
+  .close-button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }

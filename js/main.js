@@ -291,3 +291,33 @@ document.getElementById("menu-logo-link").addEventListener("click", function() {
   /*
 	KOSONG
 ================================ */
+
+function showPopup() {
+	var popup = document.getElementById("mobile-popup");
+	popup.classList.add("active"); // Tambahkan kelas "active" untuk menampilkan popup
+  }
+  
+  function closePopup() {
+	var popup = document.getElementById("mobile-popup");
+	popup.classList.remove("active"); // Hapus kelas "active" untuk menyembunyikan popup
+  
+	// Tambahkan penundaan sebelum benar-benar menyembunyikan popup
+	setTimeout(function () {
+	  popup.style.display = "none";
+	}, 300); // Ganti angka 300 dengan durasi animasi yang sesuai
+  }
+  
+  // Event listener untuk menjalankan kode saat latar belakang transparan diklik
+  var background = document.querySelector(".popup");
+  background.addEventListener("click", function (event) {
+	if (event.target === this) {
+	  closePopup();
+	}
+  });
+  
+  // Tampilkan popup jika perangkat adalah mobile
+  if (window.innerWidth <= 767) {
+	showPopup();
+  }
+  
+  
