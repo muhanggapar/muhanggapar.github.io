@@ -2088,7 +2088,6 @@ select {
 /* Gaya tombol tambahan di tampilan desktop */
 .button-container {
     display: flex;
-    justify-content: space-between;
     align-items: left;
   }
   
