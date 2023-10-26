@@ -2085,6 +2085,32 @@ select {
 	text-align: left;
 }
 
+/* Gaya tombol tambahan di tampilan desktop */
+.button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-button {
+    margin-right: 10px; /* Atur jarak kanan antara tombol About dan tombol tambahan di desktop */
+  }
+  
+  .potfolio-button {
+    margin-left: 10px; /* Atur jarak kiri antara tombol About dan tombol tambahan di desktop */
+  }
+  
+  /* Gaya tombol tambahan di tampilan mobile */
+  @media (max-width: 767px) {
+    .button-container {
+      flex-direction: column; /* Mengatur tombol untuk tampilan vertikal di mobile */
+    }
+  
+    .about-button,
+    .potfolio-button {
+      margin: 10px 0; /* Atur jarak di atas dan bawah antara tombol di mobile */
+    }
+  }
+
 /*====================================================================
 							[ TAMBAHAN ]
 ======================================================================*/
