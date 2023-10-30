@@ -2166,3 +2166,32 @@ select {
     text-align: center;
     cursor: pointer;
   }
+
+
+ /*====================================================================
+							[ SCROLL BAR ]
+======================================================================*/
+
+/* Untuk scrollbar vertical */
+::-webkit-scrollbar {
+    width: 12px; /* Lebar track scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #AAAAAA; /* Warna scrollbar thumb */
+    border-radius: 6px; /* Radius thumb sesuai kebutuhan Anda */
+    width: 8px; /* Lebar thumb lebih kecil dari track */
+    height: 60px; /* Tinggi thumb sesuai kebutuhan Anda */
+}
+
+/* Menghilangkan track scrollbar */
+::-webkit-scrollbar-track {
+    border: none;
+    background-color: transparent;
+}
+
+/* Saat pointer hover di atas scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #717171; /* Warna saat hover */
+}
+
