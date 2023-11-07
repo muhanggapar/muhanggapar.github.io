@@ -2184,12 +2184,6 @@ select {
     height: 60px; /* Tinggi thumb sesuai kebutuhan Anda */
 }
 
-/* Menghilangkan track scrollbar */
-::-webkit-scrollbar-track {
-    border: none;
-    background-color: transparent;
-}
-
 /* Saat pointer hover di atas scrollbar thumb */
 ::-webkit-scrollbar-thumb:hover {
     background-color: #717171; /* Warna saat hover */
